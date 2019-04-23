@@ -1,18 +1,11 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-#
-#  capstone.py
-# 
-#  Copyright 2019  <pi@badberryguy>
-
-#import RPi.GIPO as GPIO
+import RPi.GIPO as GPIO
 import time
 import pyautogui as pag
 import matplotlib.pyplot as plt
 import numpy as np
 import spiUtils as su
 
-GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BCM)
 
 class Button:
     def __init__(self, pinNum, keyToPress):
